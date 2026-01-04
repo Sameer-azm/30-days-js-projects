@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins",sans-serif;
+}
+body{
+background-image: url(./assets/laptop.png);
+}
+.container{
+  width: 400px;
+  /* height: 40vh; */
+  position: absolute;
+  padding: 25px 35px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: rgb(255, 218, 86);
+  border-radius: 12px;
+}
+.container>p{
+  font-size: 16px;
+  font-weight:600 ;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.container>input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #838398;
+  border-radius: 12px;
+  outline: none;
+  margin: 10px 0 20px;
+}
+.container>input:hover{
+  color: black;
+}
+.container>button{
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  outline: none;
+  margin: 10px 0 20px;
+  font-size: 600;
+  font-weight:16px ;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+.container>button:hover{
+  background-color: rgb(255, 197, 110);
+  border-radius: 2px solid black;
+}
+#imgbox{
+  border-radius: 5px;
+  max-height: 0;
+  transition: max-height 1s;
+    overflow: hidden;
+}
+#imgbox img{
+  width: 100%;
+  padding: 10px;
+}
+#imgbox.show-img{
+  margin: 10px auto;
+  width: 150px;
+  max-height: 300px;
+  border: 1px solid #000000;
+}
+.error{
+  animation: shake 0.1s linear 10;
+}
+@keyframes shake{
+  0%{
+    transform: translateX(0);
+  }
+  25%{
+ transform: translateX(-2px);
+  }
+  50%{
+ transform: translateX(0);
+  }
+  75%{
+ transform: translateX(2px);
+  }
+  100%{
+ transform: translateX(0);
+  }
+}
+
+
+
+
+ @media screen and (max-width:768px){
+  body{
+    background-image:url("./assets/mobile.png");
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+     .container {
+    position: static;   
+    transform: none;        
+    width: 90%;
+    margin: auto 10px; 
+  
+  }
+ 
+} 
+
