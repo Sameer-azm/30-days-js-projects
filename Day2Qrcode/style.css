@@ -94,7 +94,7 @@ background-image: url(./assets/laptop.png);
  @media screen and (max-width:768px){
   body{
     background-image:url("./assets/mobile.png");
-    min-height: 100vh;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
