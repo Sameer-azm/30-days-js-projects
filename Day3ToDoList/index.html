@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+
+        <div class="todobox">
+            <h1>Todo App</h1>
+
+        <div class="input">
+         <input id="todoinput" type="text" placeholder="Enter what to do">
+         <button onclick="addtodoitems()" id="addBtn">Add</button> 
+        </div>
+
+        <ul id="todoList">
+            <!-- <li class="todoitems">play <i onclick="deleteSingleTodo()" class="fa-solid fa-xmark"></i> </li> -->
+        </ul>
+        
+
+        <button class="delete" onclick="deleteAllTodoElem()" id="deleteAll">Delete All</button>
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

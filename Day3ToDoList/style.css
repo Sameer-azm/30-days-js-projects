@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    background-color: #FFFDE1; ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.todobox{
+    background:#0F2854;
+     align-items: center;
+    height: 70vh;
+    width: 41%;
+    padding: 20px;
+   border-radius: 12px;
+
+}
+h1{
+    text-align: center;
+    margin: 10px;
+    color: #4f46e5;
+}
+.input{
+    display: flex;
+    text-align: center;
+    color: white;
+    gap: 12px;
+    /* background-color: red; */
+    margin: 0;
+}
+.input input{
+    padding: 15px;
+    border-radius: 15px;
+    width: 400px;
+    border: none;
+}
+.input input:focus{
+    padding: 15px;
+    border-radius: 15px;
+    width: 400px;
+    border: none;
+}
+
+ .input button{
+    background: #2563eb;
+    color: rgb(241, 235, 235);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 16px 22px;
+    font-size: 14px;
+
+ }
+.input button:focus{
+   background-color: #fffb00;
+   color: black;
+}
+.delete{
+    width: 100%;
+    background-color: #ef4444 ;
+    font-weight: 600;
+    color: white;
+    padding: 14px;
+    border-radius: 15px;
+    width: 300px;
+    border: none;
+    margin: 20px auto 0;
+    cursor: pointer;
+    display: block;
+}
+.delete:hover{
+     background-color: #dc2626; 
+}
+.delete:focus{
+    background-color: #dc2626;   /* deep red */
+    color: white;
+    transition: 0.3s;
+}
+ ul > li {
+    margin-top: 10px;
+            list-style: none;
+            margin-bottom: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 10px ;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #FFFDE1;
+         
+            
+        }
+
+        ul > li i {
+            color: red;
+            cursor: pointer;
+        }
+        ul>li>button{
+            border: none;
+           padding: 0;
+    
+        }
